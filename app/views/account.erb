@@ -11,8 +11,6 @@
       <% user = Helpers.current_user(@session) %>
       <h1>Welcome <%= user.username %></h1>
       <h3>Your Balance: <%= user.balance %></h3>
-    <% else %>
-      <a href='/error'></a>
     <% end %>
   </body>
 </html>
