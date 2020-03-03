@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>title</title>
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
-    <% require_relative '../helpers/helpers' %>
   </head>
   <body id="page-top">
     <a href='/logout'>Log Out</a>
-    <% if Helper.is_logged_in?(@session) %>
-      <% user = Helper.current_user(@session) %>
+    <% if Helpers.is_logged_in?(@session) %>
+      <% user = Helpers.current_user(@session) %>
       <p>Username: <%= user.username %></p>
       <p>Balance: <%= user.balance %></p>
     <% else %>
