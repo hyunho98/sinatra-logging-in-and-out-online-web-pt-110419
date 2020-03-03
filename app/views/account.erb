@@ -12,7 +12,7 @@
       <p>Username: <%= user.username %></p>
       <p>Balance: <%= user.balance %></p>
     <% else %>
-      <a href='/'>Home</a>
+      <% redirect '/error' %>
     <% end %>
   </body>
 </html>
