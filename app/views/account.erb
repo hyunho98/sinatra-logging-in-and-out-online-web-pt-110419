@@ -10,7 +10,7 @@
     <% if Helpers.is_logged_in?(@session) %>
       <% user = Helpers.current_user(@session) %>
       <h1>Welcome <%= user.username %></h1>
-      <p>Balance: <%= user.balance %></p>
+      <h3>Your Balance: <%= user.balance %></h3>
     <% else %>
       <a href='/error'></a>
     <% end %>
